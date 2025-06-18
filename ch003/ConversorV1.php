@@ -20,7 +20,7 @@
             echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a " . numfmt_format_currency($padrao, $dolar, "USD");
         ?>
         <p><b>*Cotação fixa de R$5,22</b> informada diretamente no código.</p>
-        <a href="./index.html"><button type="button">&#8592; Voltar</button></a>
+        <button onclick="javascript:history.go(-1)">&#8592; Voltar</button>
 	</section>
 </body>
 </html>

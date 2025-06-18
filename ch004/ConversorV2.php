@@ -10,7 +10,7 @@
     <section>
         <h1>Conversor de Moedas v2.0</h1>
         <?php 
-            $real = $_GET["dinheiro"];
+             $real = $_GET["dinheiro"];
             $inicio = date("m-d-Y", strtotime("-7 days"));
             $fim = date("m-d-Y");
 
@@ -26,7 +26,7 @@
             echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a " . numfmt_format_currency($padrao, $dolar, "USD");
         ?>
         <p>*Cotação obtida diretamente do site do site do <a href="https://dadosabertos.bcb.gov.br/" target="_blank">Banco Central do Brasil</a></p>
-        <a href="./index.html"><button type="button">&#8592; Voltar</button></a>
+        <button onclick="javascript:history.go(-1)">&#8592; Voltar</button>
 	</section>
 </body>
 </html>

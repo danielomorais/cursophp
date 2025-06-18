@@ -18,7 +18,7 @@
          echo "<p><strong>O número escohlido foi {$numero}</strong></p>";
          echo "<p>O seu <i>sucessor</i> é:  {$sucessor}</p>";
       ?>
-      <a href="./index.html"><button type="button">&#8592; Voltar</button></a>
+      <button onclick="javascript:history.go(-1)">&#8592; Voltar</button>
 	</section>
 </body>
 </html>
